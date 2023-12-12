@@ -17,6 +17,14 @@ cd vm-init
 bash setup/debian.sh
 ```
 
+## Darwin
+
+```bash
+git clone https://github.com/kahnwong/vm-init.git
+cd vm-init
+bash setup/darwin.sh
+```
+
 ## Features
 
 - [fish](https://github.com/fish-shell/fish-shell) - shell
