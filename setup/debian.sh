@@ -3,8 +3,8 @@
 # install
 sudo apt update || apt update
 sudo apt install -y curl ca-certificates fish zoxide exa --no-install-recommends || apt install -y curl ca-certificates fish zoxide exa --no-install-recommends
-curl -sS https://starship.rs/install.sh | sh -s -- -y
-curl -LSfs https://raw.githubusercontent.com/cantino/mcfly/master/ci/install.sh | sh -s -- --git cantino/mcfly
+sudo curl -sS https://starship.rs/install.sh | sh -s -- -y || curl -sS https://starship.rs/install.sh | sh -s -- -y
+sudo curl -LSfs https://raw.githubusercontent.com/cantino/mcfly/master/ci/install.sh | sh -s -- --git cantino/mcfly || curl -LSfs https://raw.githubusercontent.com/cantino/mcfly/master/ci/install.sh | sh -s -- --git cantino/mcfly
 
 # fish config
 mkdir -p "$HOME/.config/fish/conf.d"
