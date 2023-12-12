@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # install
-apt update
-apt install -y curl ca-certificates fish zoxide exa --no-install-recommends
+sudo apt update || apt update
+sudo apt install -y curl ca-certificates fish zoxide exa --no-install-recommends || apt install -y curl ca-certificates fish zoxide exa --no-install-recommends
 curl -sS https://starship.rs/install.sh | sh -s -- -y
 curl -LSfs https://raw.githubusercontent.com/cantino/mcfly/master/ci/install.sh | sh -s -- --git cantino/mcfly
 

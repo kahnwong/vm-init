@@ -12,6 +12,8 @@ docker run -it vm-init fish
 ## Debian
 
 ```bash
+git clone https://github.com/kahnwong/vm-init.git
+cd vm-init
 bash setup/debian.sh
 ```
 
